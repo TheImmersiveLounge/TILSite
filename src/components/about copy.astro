@@ -1,0 +1,102 @@
+---
+import Image from "astro/components/Image.astro";
+import Button from "./button.astro";
+const link = "/About";
+
+// this is an SEO related variable, only updated the last word if making changes
+const name = "redirect to about";
+
+// adjust these variable to change your content
+const about1 = "We are an artist-focused immersive music production collective.";
+const about2 = "We define immersive music as music that integrates spatial audio technology with the goal of creating a listening experience for immersive formats. Immersive music expands from the common stereo listening playback format (of left and right channels) to a 360-degree sound field that allows for the use of both the horizontal and vertical planes. Whether it is binaural (for YouTube) or Dolby Atmos on streaming platforms, we make music that translates across various playback devices. However, all you need is a pair of headphones!";
+const about3 = "The foundation of our project is built on research around workflows for immersive music production. A preliminary analysis of the research has shown 1. there is a knowledge gap through lack of awareness as well as inaccessibility to information, 2. there are inconsitencies in monitoring and translation practices, and 3. there are financial limitations.";
+const about4 = "To inform both academia and the music industry. To inform artists. To document our processes and create high-quality immersive music productions. ";
+const about5 = "We are guiding artists throughout the process of producing their music for immersive formats starting from composition, arranging and pre-producing, to recording, to mixing, to mastering. We provide knowldge so artists can be inspired by the technology. One of our goals is to think about our productions spatially from the beginning, rather than leaving these creative decisions for the mixing stage.";
+
+const photo1 = "/photos/session_1/team_1.jpg";
+const photo2 = "/photos/session_2/presenting_mics.jpg";
+const photo3 = "/photos/session_2/video_camera.jpg";
+---
+
+<section class="flex w-full items-center justify-center m-10">
+  <h1>{about1}</h1>
+</section>
+
+<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
+  <div class="mb-10 order-1 flex w-full justify-center lg:w-1/2">
+    <div class="scale-125 group relative w-fit max-w-md">
+      <Image
+        src={photo1}
+        alt="Closeup shot of Taylor from Cosmo Rat sat on a wooden stool, with a binaural head microphone nearby and a spooky table with candles and mirror in the background."
+        class="drop-shadow-md mx-auto h-auto w-full max-w-xs rounded-xl shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        width={500}
+        height={500}
+        loading="eager"
+        />
+    </div>
+  </div>
+  <div class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
+    <p class="mx-10 text-center text-2xl lg:text-left">{about1}</p>
+  </div>
+</section>
+
+<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
+  <div class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
+    <p class="mx-10 text-center text-2xl lg:text-left">
+      {about2}
+    </p>
+  </div>
+  <div class="order-1 flex w-full justify-center lg:order-3 lg:w-1/2">
+    <div class="group relative w-full max-w-md">
+      <Image
+        src={photo2}
+        alt="completed work"
+        class="drop-shadow-md mx-auto h-auto w-full max-w-xs rounded-xl shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        width={500}
+        height={500}
+        loading="eager"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
+  <div class="order-1 flex w-full justify-center lg:w-1/2">
+    <div class="group relative w-fit max-w-md">
+      <Image
+        src={photo3}
+        alt="Closeup shot of Taylor from Cosmo Rat sat on a wooden stool, with a binaural head microphone nearby and a spooky table with candles and mirror in the background."
+        class="drop-shadow-md mx-auto h-auto w-full max-w-xs rounded-xl shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        width={500}
+        height={500}
+        loading="eager"
+        />
+    </div>
+  </div>
+  <div
+    class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
+    <p class="mx-10 text-center text-2xl lg:text-left">
+      {about3}
+    </p>
+  </div>
+</section>
+
+<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
+  <div class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
+    <p class="mx-10 text-center text-2xl lg:text-left">
+      {about4}
+    </p>
+  </div>
+  <div class="order-1 flex w-full justify-center lg:order-3 lg:w-1/2">
+    <div class="group relative w-full max-w-md">
+      <Image
+        src={photo3}
+        alt="completed work"
+        class="drop-shadow-md mx-auto h-auto w-full max-w-xs rounded-xl shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        width={500}
+        height={500}
+        loading="eager"
+      />
+    </div>
+  </div>
+</section>

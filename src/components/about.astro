@@ -1,0 +1,29 @@
+---
+import Image from "astro/components/Image.astro";
+import Button from "./button.astro";
+const link = "/About";
+
+// this is an SEO related variable, only updated the last word if making changes
+const name = "redirect to about";
+
+// adjust these variable to change your content
+const about1 = "We are an artist-focused immersive music production collective.";
+const about2 = "We define immersive music as music that integrates spatial audio technology with the goal of creating a listening experience for immersive formats. Immersive music expands from the common stereo listening playback format (of left and right channels) to a 360-degree sound field that allows for the use of both the horizontal and vertical planes. Whether it is binaural (for YouTube) or Dolby Atmos on streaming platforms, we make music that translates across various playback devices. However, all you need is a pair of headphones!";
+const about3 = "The foundation of our project is built on research around workflows for immersive music production. A preliminary analysis of the research has shown 1. there is a knowledge gap through lack of awareness as well as inaccessibility to information, 2. there are inconsitencies in monitoring and translation practices, and 3. there are financial limitations.";
+const about4 = "To inform both academia and the music industry. To inform artists. To document our processes and create high-quality immersive music productions. ";
+const about5 = "We are guiding artists throughout the process of producing their music for immersive formats starting from composition, arranging and pre-producing, to recording, to mixing, to mastering. We provide knowldge so artists can be inspired by the technology. One of our goals is to think about our productions spatially from the beginning, rather than leaving these creative decisions for the mixing stage.";
+
+const photo1 = "/photos/session_1/team_1.jpg";
+const photo2 = "/photos/session_2/studio_wide.jpg";
+const photo3 = "/photos/session_2/video_camera.jpg";
+---
+
+<div class="flex w-full items-center justify-center m-auto p-8 bg-primary">
+  <h1>{about1}</h1>
+</div>
+
+<div class="grid grid-cols-3 h-[50%]">
+  <img src={photo1} class="h-[75%] object-cover w-full display-block" />
+  <img src={photo3} class="h-[75%] object-cover w-full display-block" />
+  <img src={photo2} class="h-[75%] object-cover w-full display-block" />
+</div>

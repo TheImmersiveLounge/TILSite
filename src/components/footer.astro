@@ -1,0 +1,21 @@
+---
+import Hover from "../components/hover.tsx";
+
+// adjust these variable to change your content
+const email = "admin@theimmersivelounge.com";
+---
+
+<footer class="text-md gap-4 px-6 pb-8 pt-20 sm:text-xl md:px-40">
+  <div class="flex place-content-center text-center">
+    <ul>
+      <li><a href="/Privacy">Privacy Policy</a></li>
+      <li><a href=`mailto:${email}`>{email}</a></li>
+    </ul>
+  </div>
+  <div class="mt-10 flex flex-col items-center">
+    <div class="flex gap-1">
+      Website designed by Joel Allison.
+    </div>
+    <p>© Copyright 2025 - The Immersive Lounge</p>
+  </div>
+</footer>

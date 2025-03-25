@@ -1,0 +1,14 @@
+---
+
+const { name, img, role, pronouns, bio } = Astro.props;
+
+---
+
+<section>
+
+<img src={img} class="border-b-8 border-b-secondary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105" />
+<h1 class="text-logo text-center text-[1.6em] mt-1">{name}</h1>
+<h2 class="italic text-logo text-center text-[1.2em] " set:html={role} />
+<h1 class="text-center font-normal mt-1 text-logo text-[1em]">{pronouns}</h1>
+
+</section>

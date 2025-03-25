@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import Nav from "../components/nav.tsx";
+import Action from "../components/action.astro";
+import Footer from "../components/footer.astro";
+import { ClientRouter } from 'astro:transitions';
+import "../styles/tailwind.css";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro small business wesbite template" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="The Immersive Lounge" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content={title} />
+    <meta
+      name="keywords"
+      content="audio, recording, immersive, immersive audio, music, spatial, spatial audio, headphones, atmos, audio engineering, dolby, dolby atmos, microphones, microphone, ambisonic, binaural, music production, workflows, phd, audio research, doctorate, audio phd"
+    />
+    <ClientRouter />
+    <title>{title}</title>
+  </head>
+  <body class="bg-(--background) text-(--font)">
+    <!-- <Nav client:load /> -->
+    <slot />
+    <Footer />
+  </body>
+</html>

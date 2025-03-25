@@ -1,0 +1,127 @@
+---
+const catImg = "/photos/crop8 Sitting grey cat.png";
+
+const aliceBio = "With experience in short film composition and production design, Alice crafts performance spaces that enhance every production. A multi-talented performer, singer, songwriter, and producer, with a degree in Creative Music Technology, Alice has even had her music performed by the Royal Scottish National Orchestra. And in case that wasn't enough, she also paints her own album covers.";
+const aliceRole = "Set Designer, Session Musician";
+const alicePronouns = "she/her";
+const aliceImg = "/photos/bios/Alice.jpg";
+
+const angusBio = "As a music producer, Angus specialises in guiding musicians in composing and arranging their music for immersive formats. A skilled pianist and arranger, he has a degree from Berklee College of Music and recording credits at Abbey Road and Metropolis Studios. He's the go-to person for a crazy story!";
+const angusRole = "Music Producer";
+const angusPronouns = "he/him";
+const angusImg = "/photos/bios/Angus.png";
+
+const beccaBio = "Becca is the creative behind TIL’s brand. With six years of experience in graphic design and marketing, Becca specialises in digital, print, and branding design. Passionate about out-of-the-box visuals with strategic purpose, Becca has exhibited artwork internationally. Fun fact about Becca is they're related to Madonna!";
+const beccaRole = "Brand Designer";
+const beccaPronouns = "she/they";
+const beccaImg = "/photos/bios/Becca.jpg";
+
+const bethanyBio = "Currently studying Film Production and Broadcast Engineering, Bethany brings her visual expertise to her role as a camera operator. Perhaps as an extracurricular use of her film skills, Bethany once dressed up as Megamind for halloween!";
+const bethanyRole = "Camera Operator";
+const bethanyPronouns = "she/her";
+const bethanyImg = "/photos/bios/Bethany.jpg";
+
+const eveBio = "Eve, with a degree in Film Production and Broadcast Engineering, is both a technical and creative mind behind the visuals of TIL. An award-winning video producer, director, and editor, Eve has worked on everything from music videos to promotional content, as well as major events like the BAFTAs and BRIT Awards. A perfectionist on set, Eve’s love language is making hot chocolates for the team.";
+const eveRole = "Cinematographer, Editor";
+const evePronouns = "she/her";
+const eveImg = "/photos/bios/Eve.jpg";
+
+const isaacBio = "Assisting in recording sessions, Isaac helps with building our immersive recording arrays, bringing his skills as a Tonmeister. He is passionate about learning immersive recording techniques as well as working with musicians and playing fingerstyle guitar. When not crafting “nutritious musical salads” online, you might find him knitting scarves.";
+const isaacRole = "Audio Assistant";
+const isaacPronouns = "he/him";
+const isaacImg = "/photos/bios/Isaac.jpg";
+
+const jamesBio = "Tonmeister, assistant engineer, and resident drum expert. James has experience recording and producing bands in London and Guildford, he also creates electronic music ranging from ambient to techno. As a member of multiple bands, his drumming skills are something to behold.";
+const jamesRole = "Assistant Engineer, Session Musician";
+const jamesPronouns = "he/him";
+const jamesImg = "/photos/bios/James.jpg";
+
+const joelBio = "Joel blends music, technology, and design in their work at TIL. They particularly love the intersection of music with other creative mediums, with technology functioning as the glue between them. As a Tonmeister, they are passionate about all genres of music, as well as creating their own music and collaborating with others. Hobbies include having the most pins on pinterest.";
+const joelRole = "Audio Assistant, Set Designer, <br>Session Musician, Web Designer";
+const joelPronouns = "they/them";
+const joelImg = "/photos/bios/Joel.jpg";
+
+const marcelaBio = "As the founder of TIL, Marcela was inspired by her doctoral research and expertise in audio engineering to create an artist-focused collective. Her goal is to help close the knowledge gap within the music industry regarding immersive music production. She is the force behind every bespoke production. Hobbies? No. TIL? Yes.";
+const marcelaRole = "Founder, Executive Producer, <br>Audio Engineer";
+const marcelaPronouns = "she/her";
+const marcelaImg = "/photos/bios/Marcela.jpg";
+
+const natashaBio = "Natasha combines technical expertise with creative vision while managing and coordinating TIL's operations. A classical musician and Tonmeister, they also delves deep into research and possesses an extensive knowledge of the hearing system. She can provide emotional support while crafting perfect cocktails.";
+const natashaRole = "Project Manager, Producer";
+const natashaPronouns = "she/they";
+const natashaImg = "/photos/bios/Natasha.jpg";
+
+const nicoleBio = "A Tonmeister with a love for both the academic and creative sides of music, Nicole specialises in classical piano performance and teaching. With a passion for audio engineering, she is dedicated to working with artists to shape their sound while assisting during recording sessions. Their wall-climbing skills have certainly come in handy during setups.";
+const nicoleRole = "Audio Assistant";
+const nicolePronouns = "she/they";
+const nicoleImg = "/photos/bios/Nicole.jpg";
+
+const viktorBio = "A versatile creative, Viktor's role covers audio through mixing and assisting, as well as managing communications and social media. With a background in music production, he has co-engineered live radio as well as performed a solo concert alternating between piano and drums. Impressive!";
+const viktorRole = "Assistant Engineer, Content Creator/<br>Comms";
+const viktorPronouns = "he/him";
+const viktorImg = "/photos/bios/Viktor.jpg";
+
+const vouFriBio = "A multi-award-winning writer, director, and cinematographer, Vou-Fri is an integral part of TIL’s video team. He brings a sharp creative vision to every project. That intro animation? All him. When not behind the camera, he enjoys death metal, Nordic folk, and flamenco guitar.";
+const vouFriRole = "Cinematographer, Content Creator/<br>Animator";
+const vouFriPronouns = "he/him";
+const vouFriImg = "/photos/bios/Vou-Fri.jpg";
+
+import "../styles/tailwind.css";
+import Hover from "../components/hover.tsx";
+import Bio from "../components/bio.astro";
+---
+
+<div class="flex w-full items-center justify-center">
+    <h1 class="mb-8">Meet The Team</h1>
+</div>
+
+<section class="w-full items-center justify-center columns-64sm">
+  <div class="m-auto justify-around grid grid-cols-4 gap-6 mb-6 w-full lg:w-5/6 columns-2xl">
+    <div class="col-start-2">
+        <Bio name="Marcela Rada", img={marcelaImg}, role={marcelaRole}, pronouns={marcelaPronouns}, bio={marcelaBio} />
+    </div>
+    <div class="col-start-3">
+        <Bio name="Natasha Blakemore", img={natashaImg}, role={natashaRole}, pronouns={natashaPronouns}, bio={natashaBio} />
+    </div>
+  </div>
+  <div class="m-auto grid grid-cols-4 gap-6 mb-6 w-full lg:w-5/6 columns-2xl">
+    <div>
+        <Bio name="Alice Mills", img={aliceImg}, role={aliceRole}, pronouns={alicePronouns}, bio={aliceBio} />
+    </div>
+    <div>
+        <Bio name="Angus Newman", img={angusImg}, role={angusRole}, pronouns={angusPronouns}, bio={angusBio} />
+    </div>
+    <div>
+        <Bio name="Becca Koçar", img={beccaImg}, role={beccaRole}, pronouns={beccaPronouns}, bio={beccaBio} />
+    </div>
+    <div>
+        <Bio name="Bethany Allan Molland", img={bethanyImg}, role={bethanyRole}, pronouns={bethanyPronouns}, bio={bethanyBio} />
+    </div>
+    <div>
+        <Bio name="Eve Pitt", img={eveImg}, role={eveRole}, pronouns={evePronouns}, bio={eveBio} />
+    </div>
+    <div>
+        <Bio name="Isaac Werling", img={isaacImg}, role={isaacRole}, pronouns={isaacPronouns}, bio={isaacBio} />
+    </div>
+    <div>
+        <Bio name="James Malpas", img={jamesImg}, role={jamesRole}, pronouns={jamesPronouns}, bio={jamesBio} />
+    </div>
+    <div>
+        <Bio name="Joel Allison", img={joelImg}, role={joelRole}, pronouns={joelPronouns}, bio={joelBio} />
+    </div>
+  </div>
+  <div class="m-auto justify-center grid grid-cols-4 gap-6 mb-6 w-full lg:w-5/6">
+    <div>
+        <Bio name="Nicole Jessop", img={nicoleImg}, role={nicoleRole}, pronouns={nicolePronouns}, bio={nicoleBio} />
+    </div>
+    <div>
+        <Bio name="Viktor Briand", img={viktorImg}, role={viktorRole}, pronouns={viktorPronouns}, bio={viktorBio} />
+    </div>
+    <div>
+        <Bio name="Vou-Fri Sett", img={vouFriImg}, role={vouFriRole}, pronouns={vouFriPronouns}, bio={vouFriBio} />
+    </div>
+    <div>
+        <Bio name="Imogen The Cat", img={catImg}, role={""}, pronouns={""}, bio={"Cat."} />
+    </div>
+  </div>    
+</section>

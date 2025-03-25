@@ -1,0 +1,27 @@
+---
+import Button from "./button.astro";
+import NewsletterSignup from './form-to-sheet.tsx';
+import Form from './form.astro';
+const link = "";
+const name = "redirect to contact";
+
+// adjust these variable to change your content
+const text = "Sign up!";
+---
+
+<section
+  class="object-fill mt-60 flex h-[500px] gap-4 bg-[url('/photos/crop/88rs_focus.jpg')] bg-cover text-center text-white"
+>
+  <div class="flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-30">
+    <h1 class="mx-20 pb-10 text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-6xl">
+      Sign up to our newsletter!
+    </h1>
+    <h2 class="mx-10 mb-20 pb-10 text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-2xl">
+      Sign up to our newsletter to receive updates about our recording sessions and research.
+    </h2>
+
+    <Form />
+
+    <Button link={link} text={text} name={name} />
+  </div>
+</section>

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('/fonts/Quattrocento-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+     font-family: 'Quattrocento';
+     src: url('/fonts/Quattrocento-Bold.ttf') format('ttf');
+     font-weight: bold;
+     font-style: normal;
+   }
+
+@font-face {
+     font-family: 'Portland';
+          src: url('/fonts/Portland-Black.ttf') format('ttf');
+     font-weight: 900;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Portland';
+          src: url('/fonts/Portland-Bold.ttf') format('ttf');
+     font-weight: bold;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Portland';
+          src: url('/fonts/Portland-Medium.ttf') format('ttf');
+     font-weight: medium;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Portland';
+          src: url('/fonts/Portland-Regular.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+}
